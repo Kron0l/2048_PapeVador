@@ -4,8 +4,8 @@
 #include "fonctions.h"
 
 void gridDisplay(vector<vector<int>> grid) {
-    for (int y = 0; y < grid.size(); y++) {
-        for (int x = 0; x < grid[y].size(); x++) {
+    for (int x = 0; x < grid.size(); x++) {
+        for (int y = 0; y < grid[x].size(); y++) {
             if (grid[x][y] != 0) {
                 cout << grid[x][y] << ',';
             }
