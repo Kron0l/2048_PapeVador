@@ -8,25 +8,30 @@ vector<vector<int>> spawn(vector<vector<int>> grid){
     vector<number> numberList;
     srand(time(NULL));
     vector<int> possibleSpawn;
-    for (int y = 0; y < grid.size(); y++) {
-        for (int x = 0; x < grid[y].size(); x++) {
+    for (int x = 0; x < grid.size(); x++) {
+        for (int y = 0; y < grid[x].size(); y++) {
             if (grid[x][y] == 0) {
                 possibleSpawn.push_back(y * 4 + x);
-                cout << y * 4 + x<< " ; ";
+                cout << x * 4 + y<< " ; ";
             }
         }
     }
     cout << endl;
 
     int randomSpawnPos1 = rand() % possibleSpawn.size();
+    int SpawnPos1 = possibleSpawn[randomSpawnPos1];
+
     possibleSpawn.erase(possibleSpawn.begin() + randomSpawnPos1);
+
     int randomSpawnPos2 = rand() % possibleSpawn.size();
-    int Spawn1x = randomSpawnPos1 % 4;
-    int Spawn1y = randomSpawnPos1 / 4;
-    int Spawn2x = randomSpawnPos2 % 4;
-    int Spawn2y = randomSpawnPos2 / 4;
-    cout << randomSpawnPos1 << " ; " << Spawn1x << " ; " << Spawn1y << endl;
-    cout << randomSpawnPos2 << " ; " << Spawn2x << " ; " << Spawn2y << endl;
+    int SpawnPos2 = possibleSpawn[randomSpawnPos2];
+
+    int Spawn1x = SpawnPos1 % 4;
+    int Spawn1y = SpawnPos1 / 4;
+    int Spawn2x = SpawnPos2 % 4;
+    int Spawn2y = SpawnPos2 / 4;
+    cout << SpawnPos1 << " ; " << Spawn1x << " ; " << Spawn1y << endl;
+    cout << SpawnPos2 << " ; " << Spawn2x << " ; " << Spawn2y << endl;
 
     numberList.push_back(number(2, Spawn1x, Spawn1y));
     numberList.push_back(number(4, Spawn2x, Spawn2y));
