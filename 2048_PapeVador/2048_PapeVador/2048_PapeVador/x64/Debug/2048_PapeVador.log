@@ -1,0 +1,4 @@
+﻿  2048_PapeVador.cpp
+C:\Users\ZBOOK\source\repos\Kron0l\2048_PapeVador\2048_PapeVador\2048_PapeVador\2048_PapeVador\grid.h(123,17): warning C4267: '=' : conversion de 'size_t' en 'int', perte possible de données
+C:\Users\ZBOOK\source\repos\Kron0l\2048_PapeVador\2048_PapeVador\2048_PapeVador\2048_PapeVador\grid.h(189,13): warning C4244: 'argument' : conversion de 'time_t' en 'unsigned int', perte possible de données
+  2048_PapeVador.vcxproj -> C:\Users\ZBOOK\source\repos\Kron0l\2048_PapeVador\2048_PapeVador\2048_PapeVador\x64\Debug\2048_PapeVador.exe
