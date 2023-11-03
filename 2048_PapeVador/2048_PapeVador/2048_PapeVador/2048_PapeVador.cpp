@@ -134,10 +134,7 @@ int main(int argc, char* args[])
             spriteList[9] = cellSprite512;
             spriteList[10] = cellSprite1024;
             spriteList[11] = cellSprite2048;
-            //grid.Spawn();
-            grid.Insert(2, 0, 3);
-            grid.Insert(2, 0, 2);
-            grid.Insert(4, 0, 1);
+            grid.Spawn();
             grid.Display(spriteList, renderer);
 
 
@@ -224,84 +221,7 @@ int main(int argc, char* args[])
             }
         }
 
-        //initialisation valeurs du jeu
-        //cout << gamemode << endl;
-
-        //grid.Spawn();
-        //if (!initSDL(screenWidth, screenHeight))
-        //{
-        //    cout << "Failed to initialize !" << endl;
-        //}
-        //else
-        //{
-
-        //    while (gamemode == "game")
-        //    {
-
-        //        //controles
-        //        switch (c = _getch()) {
-
-        //        case KEY_UP:
-        //            
-        //            break;
-
-        //        case KEY_DOWN:
-        //            grid.gravity = "down";
-        //            move = grid.Gravity(move);
-        //            if (move) {
-        //                grid.Spawn();
-        //            }
-        //            grid.Display();
-        //            end = grid.End();
-        //            break;
-
-        //        case KEY_LEFT:
-        //            grid.gravity = "left";
-        //            move = grid.Gravity(move);
-        //            if (move) {
-        //                grid.Spawn();
-        //            }
-        //            grid.Display();
-        //            end = grid.End();
-        //            break;
-
-        //        case KEY_RIGHT:
-        //            grid.gravity = "right";
-        //            move = grid.Gravity(move);
-        //            if (move) {
-        //                grid.Spawn();
-        //            }
-        //            grid.Display();
-        //            end = grid.End();
-        //            break;
-
-        //        default:
-        //            grid.gravity = "neutral";
-        //            break;
-        //        }
-
-        //        //fin de jeu affichage victoire ou d?faite et sortie du jeu
-        //        if (grid.gravity != "neutral" && end != "false") {
-        //            if (end == "victory") {
-        //                cout << "Congratulation for you're beautifull win !!!!" << endl;
-        //            }
-        //            else if (end == "loose") {
-        //                cout << "Haha looser" << endl;
-        //            }
-        //            cout << "Enter anything to continue" << endl;
-        //            string b;
-        //            cin >> b;
-        //            if (b.size() > 0) {
-        //                gamemode = "menu";
-        //            }
-
-        //        }
-
-        //    }
-        //}
-
-
-        //destruction de la grid
+        
     }
     return 0;
 }
